@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Secondset" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEU-d7-WEE">
+                                <rect key="frame" x="106.5" y="611" width="162" height="36"/>
+                                <color key="backgroundColor" white="0.41999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.98641671350000004" green="0.98883252509999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Личный кабинет">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="mUe-uP-SR0" kind="show" id="RwD-FF-PkL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mS7-js-oez">
+                                <rect key="frame" x="74" y="573" width="227" height="36"/>
+                                <color key="backgroundColor" white="0.41999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Получить личный бонус">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dKG-s0-De9" kind="show" id="AQe-ag-gqc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mops" translatesAutoresizingMaskIntoConstraints="NO" id="TLw-AT-6gl">
+                                <rect key="frame" x="85" y="159" width="216" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="7eZ-nc-TW2"/>
+                                    <constraint firstAttribute="height" constant="200" id="yfu-Ss-D9Y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secondset" translatesAutoresizingMaskIntoConstraints="NO" id="4xz-a0-koY">
+                                <rect key="frame" x="11" y="349" width="358" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="9Wm-nR-ixQ"/>
+                                    <constraint firstAttribute="height" constant="60" id="muI-Nw-Xuq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wEU-d7-WEE" firstAttribute="top" secondItem="mS7-js-oez" secondAttribute="bottom" constant="2" id="0pe-Ha-Rw1"/>
+                            <constraint firstItem="TLw-AT-6gl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="6Rc-qd-Ljq"/>
+                            <constraint firstItem="wEU-d7-WEE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IV5-X5-p7p"/>
+                            <constraint firstItem="mS7-js-oez" firstAttribute="centerX" secondItem="wEU-d7-WEE" secondAttribute="centerX" id="OBC-jg-x7m"/>
+                            <constraint firstItem="TLw-AT-6gl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-74.5" id="OQO-DM-abF"/>
+                            <constraint firstItem="wEU-d7-WEE" firstAttribute="top" secondItem="mS7-js-oez" secondAttribute="bottom" constant="2" id="OoT-kO-6Ut"/>
+                            <constraint firstItem="wEU-d7-WEE" firstAttribute="top" secondItem="mS7-js-oez" secondAttribute="bottom" constant="8" id="OxF-nn-pXJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wEU-d7-WEE" secondAttribute="bottom" constant="20" id="PdQ-la-ile"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wEU-d7-WEE" secondAttribute="bottom" constant="20" id="V6h-5T-iRx"/>
+                            <constraint firstItem="wEU-d7-WEE" firstAttribute="top" secondItem="mS7-js-oez" secondAttribute="bottom" constant="2" id="WRP-HP-DoU"/>
+                            <constraint firstItem="4xz-a0-koY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="45.5" id="cdC-qp-mpv"/>
+                            <constraint firstItem="4xz-a0-koY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2.5" id="kYY-4U-8cb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bonusButton" destination="mS7-js-oez" id="ZRk-xj-oo9"/>
+                        <outlet property="privateAreaButton" destination="wEU-d7-WEE" id="0aM-0L-FlP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="96.7016491754123"/>
+        </scene>
+        <!--Personal Area View Controller-->
+        <scene sceneID="qdi-Jf-7PE">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="mUe-uP-SR0" customClass="PersonalAreaViewController" customModule="Secondset" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JSa-Mg-RsR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1z-Pk-L17">
+                                <rect key="frame" x="148" y="610" width="79" height="37"/>
+                                <color key="backgroundColor" white="0.81000000000000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="V4o-l6-hw5"/>
+                                    <constraint firstAttribute="height" constant="37" id="dXt-WR-2uc"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Назад">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonFromPersAreaPressed:" destination="mUe-uP-SR0" eventType="touchUpInside" id="bmM-6J-hcW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kka-QY-K2d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="R1z-Pk-L17" secondAttribute="bottom" constant="20" symbolic="YES" id="1XE-mA-WUI"/>
+                            <constraint firstItem="R1z-Pk-L17" firstAttribute="centerX" secondItem="JSa-Mg-RsR" secondAttribute="centerX" id="deg-ZW-Let"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XtT-W3-sWS"/>
+                    <connections>
+                        <outlet property="backButtonFromPersArea" destination="R1z-Pk-L17" id="cGW-Gi-hiY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dk2-T5-bH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.79999999999995" y="870.31484257871068"/>
+        </scene>
+        <!--Roulette View Controller-->
+        <scene sceneID="VQE-my-nFe">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="dKG-s0-De9" customClass="RouletteViewController" customModule="Secondset" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xJ1-Rz-RmT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stv-cZ-QIf">
+                                <rect key="frame" x="148" y="615" width="79" height="31"/>
+                                <color key="backgroundColor" white="0.81000000000000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="WtR-7G-hZP"/>
+                                    <constraint firstAttribute="width" constant="79" id="rcZ-CK-eIC"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Назад">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonFromRoulettePressed:" destination="dKG-s0-De9" eventType="touchUpInside" id="C0B-Be-cXP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbx-o4-bmH">
+                                <rect key="frame" x="38.5" y="274" width="298" height="118"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="298" id="I7J-ni-J9E"/>
+                                    <constraint firstAttribute="height" constant="118" id="ObK-LA-pNc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-dc-AOn">
+                                <rect key="frame" x="116.5" y="405" width="142" height="37"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="M3J-do-fMp"/>
+                                    <constraint firstAttribute="height" constant="37" id="brb-jF-I90"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Мне повезет!">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="spinRouletteButtonPressed:" destination="dKG-s0-De9" eventType="touchUpInside" id="mu6-jd-OEG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Как пользоваться?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Rf-9J-QUg">
+                                <rect key="frame" x="67" y="60" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MvW-lg-MEe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kbx-o4-bmH" firstAttribute="centerX" secondItem="xJ1-Rz-RmT" secondAttribute="centerX" id="AtZ-9l-3my"/>
+                            <constraint firstItem="Kbx-o4-bmH" firstAttribute="top" secondItem="MvW-lg-MEe" secondAttribute="top" constant="274" id="Bvy-r7-U4g"/>
+                            <constraint firstAttribute="bottom" secondItem="Stv-cZ-QIf" secondAttribute="bottom" constant="20" symbolic="YES" id="TnV-Si-vaY"/>
+                            <constraint firstItem="6hT-dc-AOn" firstAttribute="centerX" secondItem="Kbx-o4-bmH" secondAttribute="centerX" id="WYt-kV-N8u"/>
+                            <constraint firstItem="Kbx-o4-bmH" firstAttribute="centerY" secondItem="xJ1-Rz-RmT" secondAttribute="centerY" id="XjR-eK-NLt"/>
+                            <constraint firstItem="Kbx-o4-bmH" firstAttribute="centerX" secondItem="xJ1-Rz-RmT" secondAttribute="centerX" id="emw-vI-0DO"/>
+                            <constraint firstItem="Kbx-o4-bmH" firstAttribute="centerY" secondItem="xJ1-Rz-RmT" secondAttribute="centerY" id="ltS-eq-f1X"/>
+                            <constraint firstItem="Kbx-o4-bmH" firstAttribute="centerX" secondItem="xJ1-Rz-RmT" secondAttribute="centerX" id="oDY-Dy-bjr"/>
+                            <constraint firstItem="6hT-dc-AOn" firstAttribute="top" secondItem="Kbx-o4-bmH" secondAttribute="bottom" constant="13" id="tkl-Fb-dj1"/>
+                            <constraint firstItem="Stv-cZ-QIf" firstAttribute="centerX" secondItem="xJ1-Rz-RmT" secondAttribute="centerX" id="xzu-jl-xzf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KPd-uE-bl9"/>
+                    <connections>
+                        <outlet property="backButtonFromRoulette" destination="Stv-cZ-QIf" id="m8N-cv-3Ci"/>
+                        <outlet property="rouletteResultLabel" destination="Kbx-o4-bmH" id="yzX-na-jfO"/>
+                        <outlet property="spinRouletteButton" destination="6hT-dc-AOn" id="Bxg-V8-HbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3r-F4-8Sz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792.79999999999995" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mops" width="739" height="747"/>
+        <image name="secondset" width="1678" height="127"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
